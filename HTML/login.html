@@ -4,13 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | videobelajar</title>
-    <link rel="stylesheet" href="CSS\login.css">
+    <link rel="stylesheet" href="\CSS\login.css">
 </head>
 <body>
     <header>
-        <div>
-            
+        <div class="wrapper-nav">
+            <div class="logo-placeholder">
+                <img src="\Image\Logo.svg" class="image-logo" alt="Logo videobelajar">
+            </div>
+            <div class="invisible-button"></div>
         </div>
     </header>
+
+    <section class="main-wrapper">
+        <div class="form-main-wrapper">
+            <div class="headline-wrapper">
+                <h1 class="headline">Masuk ke Akun</h1>
+                <p class="description">Yuk, lanjutin belajarmu di videobelajar.</p>
+            </div>
+
+            <div class="form-wrapper">
+                <div class="email-button-wrapper">
+                    <div class="input-email-password">
+                        <div class="form-email">
+                            <label for="email-input" class="label-email">E-Mail <p class="required">*</p> </label>
+                            <input type="text" id="email-input" class="input-email" required>
+                        </div>
+
+                        <div class="form-password">
+                            <label for="password-input" class="label-password">Password <p class="required">*</p> </label>
+                            <div class="form-password-container">
+                                <input type="password" id="password-input" class="input-password" required>
+                                <img src="\Image\mdi_eye-off.svg" class="icon-eye">
+                            </div>
+                        </div>
+                        <a href="#" class="password-forget">Lupa Password?</a>
+                    </div>
+
+                    <div class="button-wrapper">
+                        <button class="button-masuk">Masuk</button>
+                        <button class="button-daftar">Daftar</button>
+                    </div>
+                </div>
+                <div class="line-wrapper">
+                    <hr class="line">
+                    <div class="text-choice-box">
+                        <p class="text-choice">atau</p>
+                    </div>
+                </div>
+
+                <button class="google-login">
+                    <img src="\Image\logos_google-icon.svg" class="google-icon">
+                    <p class="text-login-google">Masuk dengan Google</p>
+                </button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
