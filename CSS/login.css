@@ -1,53 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html, body {
-    background: #FFFDF3;
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    p, h2, h1{
-        margin: 0;
-    }
+html, body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffdf3;
+    height: 100%;
+    width: 100%;
 }
 
 header {
-    background: #FFF;
-    width: 100vw;
-    height: 4.938rem;
+    width: 100%;
+    height: 79px;
     border-bottom: 1px solid var(--Other-Border, rgba(58, 53, 65, 0.12));
+    background: #FFF;
 }
 
 .wrapper-nav {
     display: flex;
-    width: 75rem;
-    height: 3.5rem;
-    padding: 0.75rem 7.5rem;
+    width: 100%;
+    padding: 12px 120px;
     justify-content: space-between;
     align-items: center;
 }
 
-.image-logo {
+.logo-placeholder {
     display: flex;
-    width: 12.063rem;
-    height: 1.881rem;
-    padding: 0.813rem 1.373rem 0.808rem 1.375rem;
+    width: 237px;
+    height: 56px;
+    padding: 13px 21.97px 12.92px 22px;
     justify-content: center;
     align-items: center;
 }
 
+.image-logo {
+    width: 193.03px;
+    height: 30.08px;
+    flex-shrink: 0;
+}
+
 .invisible-button {
-    width: 14.313rem;
-    height: 3.5rem;
+    width: 229px;
+    height: 56px;
 }
 
 .main-wrapper {
     display: flex;
-    width: 75rem;
-    height: 51rem;
-    padding: 4rem 7.5rem;
+    width: 100%;
+    height: auto;
+    padding: 64px 120px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -57,9 +64,8 @@ header {
 
 .form-main-wrapper {
     display: flex;
-    width: 32.375rem;
-    height: 34.063rem;
-    padding: 2.25rem;
+    width: 590px;
+    padding: 36px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -70,13 +76,15 @@ header {
 }
 
 .headline-wrapper {
-    width: 32.813rem;
-    height: 4.188rem;
     display: flex;
+    height: 67px;
+    width: 525px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-self: center;
     gap: 10px;
+    position: relative;
 }
 
 .headline {
@@ -88,7 +96,6 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: 110%; /* 35.2px */
-    margin: 0;
 }
 
 .description {
@@ -101,22 +108,10 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.013rem;
-    margin: 0;
+    letter-spacing: 0.2px;
 }
 
-.form-wrapper {
-    width: 32.375rem;
-    height: 27.625rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-}
-
-.email-button-wrapper {
-    width: 32.375rem;
-    height: 20.625rem;
+.email-button-wrapper, .form-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -124,15 +119,26 @@ header {
 }
 
 .input-email-password {
-    width: 32.375rem;
-    height: 12.875rem;
     display: flex;
+    width: 518px;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
 }
 
+.form-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
 .label-email {
+    display: flex;
+    width: 110px;
+    padding: 0px 16px 4px 0px;
+    align-items: flex-end;
+    gap: 4px;
     color: var(--text-dark-secondary, #4A505C);
 
     /* Body Medium/Medium-Regular */
@@ -141,12 +147,7 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.013rem;
-    display: flex;
-    width: 6.875rem;
-    padding: 0rem 1rem 0.25rem 0rem;
-    align-items: flex-end;
-    gap: 4px;
+    letter-spacing: 0.2px;
 }
 
 .required {
@@ -157,8 +158,8 @@ header {
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem; /* 150% */
-    letter-spacing: 0.009rem;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.15px;
 }
 
 .input-email {
@@ -167,26 +168,40 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.013rem;
-    width: 31.125rem;
-    height: 1.5rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    letter-spacing: 0.2px;
+
+    height: 40px;
     display: flex;
     align-items: flex-start;
     align-self: stretch;
     border-radius: 6px;
     border: 1px solid var(--Other-Border, #F1F1F1);
+    padding: 12px 10px;
+    flex-direction: column;
+    flex: 1 0 0;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
 }
 
 .input-email:focus {
-    outline: none; /* Menghilangkan outline default */
-    border-color: none; /* Mengatur ulang warna border ke default */
+    border-width: 1px;
+    border-color: var(--Primary-Default, #3ECF4C);
+    box-shadow: 0 0 0 4px rgba(62, 207, 76, 0.3);
+}
+
+.form-password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
 }
 
 .label-password {
+    display: flex;
+    width: 110px;
+    padding: 0px 16px 4px 0px;
+    align-items: flex-end;
+    gap: 4px;
     color: var(--text-dark-secondary, #4A505C);
 
     /* Body Medium/Medium-Regular */
@@ -195,79 +210,71 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.013rem;
-    display: flex;
-    width: 6.875rem;
-    padding: 0rem 1rem 0.25rem 0rem;
-    align-items: flex-end;
-    gap: 4px;
+    letter-spacing: 0.2px;
 }
 
 .form-password-container {
-    width: 31.125rem;
-    height: 1.5rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    height: 40px;
+    padding: 12px 10px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     align-self: stretch;
     border-radius: 6px;
     border: 1px solid var(--Other-Border, #F1F1F1);
-    justify-items: flex-start;
-    align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .input-password {
+    width: 100%;
     font-family: "DM Sans";
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.013rem;
-    width: 29.125rem;
-    height: 1.5rem;
+    letter-spacing: 0.2px;
+    color: var(--text-dark-secondary, #4A505C);
+    outline: none;
     border: none;
 }
 
-.input-password:focus {
-    outline: none; /* Menghilangkan outline default */
-    border-color: initial; /* Mengatur ulang warna border ke default */
-}
+.form-password-container:focus-within {
+    border-width: 1px;
+    border-color: var(--Primary-Default, #3ECF4C);
+    box-shadow: 0 0 0 4px rgba(62, 207, 76, 0.3);
+  }  
 
-.icon-eye {
-    height: 1.5rem;
-    width: 1.5rem;
-    display: flex;
-    align-self: flex-end;
+.toggle-password {
+    width: 24px;
+    height: 24px;
+    border: none;
+    outline: none;
+    background-color: #FFF;
     cursor: pointer;
 }
 
 .password-forget {
-    width: 32.375rem;
     color: var(--text-dark-secondary, #4A505C);
-    text-align: end;
+    text-align: center;
+    align-self: flex-end;
+    text-decoration: none;
+    cursor: pointer;
 
     /* Body Medium/Medium-Medium */
     font-family: "DM Sans";
-    font-size: 1rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.013rem;
-    text-decoration: none;
-    cursor: pointer;
+    letter-spacing: 0.2px;
 }
 
 .password-forget:hover {
     text-decoration: underline;
+    transition: text-decoration 0.3s ease;
 }
 
 .button-wrapper {
-    width: 32.375rem;
-    height: 6.25rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -276,61 +283,76 @@ header {
 
 .button-masuk {
     display: flex;
-    width: 32.375rem;
-    height: 2.625rem;
+    width: 518px;
+    height: 42px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background: var(--Primary-Default, #3ECF4C);
-    color: var(--text-light-primary, #FFF);
+    background: var(--Primary-100, rgba(226, 252, 217, 0.80));
+    border: none;
+    outline: none;
+
+    color: var(--Primary-Default, #3ECF4C);
+
     /* Body Medium/Medium-Bold */
     font-family: "DM Sans";
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.013rem;
-    border: none;
-    cursor: pointer;
+    letter-spacing: 0.2px;
+    transition: background-color 300ms ease 0s, color 300ms ease 0s;
+}
+
+.button-masuk:hover {
+    background-color: var(--Primary-Default, #3ECF4C);
+    color: var(--text-light-primary, #FFF);
+    
 }
 
 .button-daftar {
     display: flex;
-    width: 32.375rem;
-    height: 2.625rem;
+    width: 518px;
+    height: 42px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border-radius: 10px;
     background: var(--Primary-100, rgba(226, 252, 217, 0.80));
+    border: none;
+    outline: none;
+
     color: var(--Primary-Default, #3ECF4C);
+
     /* Body Medium/Medium-Bold */
     font-family: "DM Sans";
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.013rem;
-    border: none;
-    cursor: pointer;
+    letter-spacing: 0.2px;
+    transition: background-color 300ms ease 0s, color 300ms ease 0s;
+}
+
+.button-daftar:hover {
+    background-color: var(--Primary-Default, #3ECF4C);
+    color: var(--text-light-primary, #FFF);
+    
 }
 
 .line-wrapper {
-    width: 32.375rem;
-    height: 1.375rem;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    position: relative;
+    width: 518px;
+    height: 22px;
 }
 
 .line {
     position: absolute;
-    height: 0.125rem;
-    width: 32.375rem;
-    margin-top: 0.625rem;
-    margin-bottom: 0.625rem;
+    width: 518px;
+    height: 2px;
     background: var(--Other-Border, #F1F1F1);
     outline: none;
     border: none;
@@ -339,10 +361,9 @@ header {
 .text-choice-box {
     background: var(--text-light-primary, #FFF);
     position: relative;
-    width: 2.125rem;
-    height: 1.375rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    display: flex;
+    padding: 0px 8px;
+    height: 22px;
     text-align: center;
 }
 
@@ -356,26 +377,27 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.013rem;
+    letter-spacing: 0.2px;
 }
 
 .google-login {
     display: flex;
-    width: 32.375rem;
-    height: 2.625rem;
+    width: 518px;
+    height: 42px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    gap: 8px;
     border: 1px solid var(--Other-Border, #F1F1F1);
     background: var(--text-light-primary, #FFF);
-    gap: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .google-icon {
-    width: 0.938rem;
-    height: 1.25rem;
+    width: 20px;
+    height: 20px;
 }
 
 .text-login-google {
@@ -387,5 +409,11 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.013rem;
+    letter-spacing: 0.2px;
+}
+
+.google-login:hover {
+    border-width: 1px;
+    border-color: var(--Primary-Default, #3ECF4C);
+    box-shadow: 0 0 0 4px rgba(62, 207, 76, 0.3);
 }
