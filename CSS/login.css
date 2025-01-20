@@ -111,7 +111,14 @@ header {
     letter-spacing: 0.2px;
 }
 
-.email-button-wrapper, .form-wrapper {
+.email-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.form-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -342,6 +349,7 @@ header {
 }
 
 .line-wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -417,3 +425,117 @@ header {
     border-color: var(--Primary-Default, #3ECF4C);
     box-shadow: 0 0 0 4px rgba(62, 207, 76, 0.3);
 }
+
+@media only screen and (max-width: 650px) {
+    /* body {
+        background-color: lightblue;
+    } */
+
+    .main-wrapper {
+        padding: 28px 32px;
+    }
+
+    .wrapper-nav {
+        display: flex;
+        width: 100%;
+        padding: 16px 24px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .form-main-wrapper {
+        padding: 28px;
+        width: 100%;
+    }
+
+    .headline-wrapper {
+        width: 100%;
+    }
+
+    .email-button-wrapper, .form-wrapper {
+        width: 100%;
+    }
+
+    .input-email-password, .label-email{
+        width: 100%;
+    }
+
+    .button-wrapper, .button-masuk, .button-daftar {
+        width: 100%;
+    }
+
+    .line-wrapper, .google-login {
+        width: 100%;
+    }
+
+    .line {
+        position: absolute;
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    /* body {
+        background-color: lightgreen;
+    } */
+
+    .logo-placeholder {
+        display: flex;
+        width: 152px;
+        height: 42px;
+        padding: 9.75px 3.978px 9.69px 3.25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-logo {
+        width: 144.773px;
+        height: 22.56px;
+        flex-shrink: 0;
+    }
+
+    .main-wrapper {
+        padding: 28px 20px;
+    }
+
+    .headline {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.875rem;
+    }
+
+    .form-main-wrapper {
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .form-wrapper {
+        gap: 20px;
+    }
+    
+    .input-email-password {
+        gap: 12px;
+    }
+
+    .label-email {
+        color: var(--text-dark-secondary, rgba(51, 51, 51, 0.68));
+        font-size: 0.875rem;
+    }
+
+    .label-password {
+        color: var(--text-dark-secondary, rgba(51, 51, 51, 0.68));
+        font-size: 0.875rem;
+    }
+
+    .password-forget {
+        color: var(--text-dark-secondary, rgba(51, 51, 51, 0.68));
+        font-size: 0.875rem;
+    }
+
+    .button-masuk, .button-daftar, .text-choice, .text-login-google {
+        font-size: 0.875rem;
+    }
+
+  }
