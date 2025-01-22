@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | videobelajar</title>
+    <link rel="stylesheet" href="\CSS\register.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper-nav">
+            <div class="logo-placeholder">
+                <img src="\Image\Logo.svg" class="image-logo" alt="Logo videobelajar">
+            </div>
+            <div class="invisible-button"></div>
+        </div>
+    </header>
+
+    <section class="main-wrapper">
+        <div class="form-main-wrapper">
+            <div class="headline-wrapper">
+                <h1 class="headline">Pendaftaran Akun</h1>
+                <p class="description">Yuk, daftarkan akunmu sekarang juga!</p>
+            </div>
+
+            <div class="form-wrapper">
+                <div class="email-button-wrapper">
+                    <div class="input-email-password">
+                        <div class="form-namaLengkap">
+                            <label for="namaLengkap-input" class="label-namaLengkap">Nama Lengkap <p class="required">*</p> </label>
+                            <input type="text" id="namaLengkap-input" class="input-namaLengkap" required>
+                        </div>
+
+                        <div class="form-email">
+                            <label for="email-input" class="label-email">E-Mail <p class="required">*</p> </label>
+                            <input type="text" id="email-input" class="input-email" required>
+                        </div>
+
+                        <div class="form-jenisKelamin">
+                            <label for="jenisKelamin-input" class="label-jenisKelamin">Jenis Kelamin <p class="required">*</p> </label>
+                            <input type="text" id="jenisKelamin-input" class="input-jenisKelamin" required>
+                        </div>
+
+                        <div class="noHp-wrapper">
+                            <div class="kodeNegara-dropdown-wrapper">
+                                <label for="noHp-input" class="label-noHp">No Hp <p class="required">*</p></label>
+                                <div class="flag-wrapper">
+                                    <div class="flag">
+                                        <img src="\Image\Indonesia_(ID).svg" alt="flag" class="flag-image">
+                                    </div>
+                                    <div class="kodeNegara-dropdown">
+                                        <p class="kodeNegara">+62</p>
+                                        <img src="\Image\arrow_down.svg" alt="arrow_down">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="text" id="noHp-input" class="input-noHp" required>
+                        </div>
+
+                        <div class="form-password">
+                            <label for="password-input" class="label-password">Kata Sandi <p class="required">*</p> </label>
+                            <div class="form-password-container">
+                                <input type="password" id="password-input" class="input-password" required>
+                                <button type="button" class="toggle-password">
+                                    <img src="\Image\mdi_eye-off.svg" class="icon-eye">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-konfirmasi-password">
+                            <label for="konfirmasi-password-input" class="label-konfirmasi-password">Konfirmasi Kata Sandi <p class="required">*</p> </label>
+                            <div class="form-konfirmasi-password-container">
+                                <input type="password" id="konfirmasi-password-input" class="input-konfirmasi-password" required>
+                                <button type="button" class="toggle-password">
+                                    <img src="\Image\mdi_eye-off.svg" class="icon-eye">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="password-forget">Lupa Password?</a>
+                    </div>
+
+                    <div class="button-wrapper">
+                        <button class="button-masuk">Daftar</button>
+                        <button class="button-daftar">Masuk</button>
+                    </div>
+                </div>
+                <div class="line-wrapper">
+                    <hr class="line">
+                    <div class="text-choice-box">
+                        <p class="text-choice">atau</p>
+                    </div>
+                </div>
+
+                <button class="google-login">
+                    <img src="\Image\logos_google-icon.svg" class="google-icon">
+                    <p class="text-login-google">Daftar dengan Google</p>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
