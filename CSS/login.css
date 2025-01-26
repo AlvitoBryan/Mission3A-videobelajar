@@ -43,6 +43,7 @@ header {
     width: 193.03px;
     height: 30.08px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .invisible-button {

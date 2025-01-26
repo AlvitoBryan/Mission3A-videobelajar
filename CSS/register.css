@@ -44,6 +44,7 @@ header {
     width: 193.03px;
     height: 30.08px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .invisible-button {
@@ -307,6 +308,7 @@ header {
 .flag-image {
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 .kodeNegara-dropdown {
